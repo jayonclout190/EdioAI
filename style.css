@@ -89,27 +89,26 @@ nav a{
 }
 
 .hero{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    padding:140px 8% 80px;
+}
 
-    .hero::before{
-
-content:"";
-
-position:absolute;
-
-right:-250px;
-
-top:100px;
-
-width:700px;
-
-height:700px;
-
-background:radial-gradient(circle,#3b82f655 0%,transparent 70%);
-
-z-index:-1;
-
-filter:blur(40px);
-
+.hero::before{
+    content:"";
+    position:absolute;
+    right:-250px;
+    top:100px;
+    width:700px;
+    height:700px;
+    background:radial-gradient(circle,#3b82f655 0%,transparent 70%);
+    z-index:-1;
+    filter:blur(40px);
 }
 
     position:relative;
@@ -176,7 +175,7 @@ filter:blur(40px);
 
 .phone{
 
-    width:430px;px;
+    width:430px;
 
     background:white;
 
@@ -651,8 +650,6 @@ flex:.4;
 margin-top:80px;
 
 border-radius:20px;
-
-}
 
     .hero-subtitle{
     color:#2563eb;
